@@ -1,0 +1,16 @@
+* missions to be completed in holiday
+** ubuntu
+- [ ] zsh
+- [ ] oh my zsh
+- [ ] tree
+- [ ] tmux
+- [ ] iterm2???
+*** git
+**** TODO think out the reasonable layout of git
+SCHEDULED: <2016-02-04 四 22:00>
+- [ ] practice git with git-book
+*** spacemacs
+- [ ] zilongshanren video
+- [ ] learn to note org files
+** after practicing spacemacs, then go on
+*** mysql

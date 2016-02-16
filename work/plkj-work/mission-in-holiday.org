@@ -1,0 +1,10 @@
+* missions to be completed in holiday
+** ubuntu
+*** git
+- [ ] think out the reasonable layout of git
+- [ ] practice git with git-book
+*** spacemacs
+- [ ] zilongshanren video
+- [ ] learn to note org files
+** after practicing spacemacs, then go on
+*** mysql

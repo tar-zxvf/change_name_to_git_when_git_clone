@@ -1,0 +1,78 @@
+* daily-word-question.org
+**<2016-01-30 Sat 10:51>
+note the solutions of goole questions:
+
+
+SELECT * FROM table_name WHERE string LIKE pattern;
+result = table.objects.filter(string__contains='pattern')
+
+Sample.objects.filter(date__range=["2011-01-01", "2011-01-31"])
+
+sql date 型的变量要加'', like '2015-12-04'
+
+source_tree 重置就是丢弃到修改
+
+在 ORM 里写的是 model 类里的属性名，
+
+model.values('..') 结果会是一个[{'..':..}..]不同于 sql 里的 groupby,不会
+自动合并取唯一，需要再 distinct()一下，
+
+python 里的基础：if..else.. 和 if..elif..的区别。
+
+搞清楚如何从一个[{..}]的结构里分页，使用频率会很高
+
+看外键关系，若可以为空，则需要加判断，若不为空，则不需要
+
+ 饼状图要数据就好，比例图会自己绘制
+
+ model 里写的方法，只要返回 row 里的数据，其它的 success，page 信息调用 EasyUI 来做
+
+ 合并两个字典，dict1.update(dict2), dict1 变成 dict1 与 dict2 的合并
+
+
+计算公式里把 int 变成 float,可简单的* 1.0 即可
+
+对列表按照列表的元素里元素排序方法，
+a = [{1:'a', 2:'b'},{1:'c',2:'d'}]
+sorted(a, key=lambda x:x[1] reverse=..)
+
+呈现给用户看的信息，尽量不要是和系统错误有关的
+
+当前端页面不显示，或者登录不上等情况时，跑一遍 init_database.py 的 init 脚本部分
+
+当反复登录都登录不上时，manage.py clearsessions,再运行
+
+能用 return 就用 return,明确程度的出口是什么
+
+记住.extra()后的结果依然是[<Model Object>...]形式,
+.extra({..}),参数只能有一个{}，多个数据写里面
+
+.extra
+.annotate 要分清
+* <2016-01-30 Sat 15:11>
+- sql 如何取得日期中的月/年？year(date), month(date)
+* <2016-01-31 Sun 09:22>
+- sql, 需要两次 group by 的语句，怎么写，合并成一个？
+  - 在 sql 里可以写个嵌套的，在 Django 里呢？
+- 性能问题：Django 的 model 是在数据库里算的？
+  - 用 pandas 做会快那么一点点？
+- Python, [... for x in a for y in b]就是等于 for x in a: for y in b: 按顺序嵌套
+- 写 SQL 语句，出问题，从两个方面找:
+  - 首先要确定字段，语句，函数名是不是写错了
+  - 然后就要看标点的状态是不是中文下的，必须是英文的才对
+    - 主要看逗号，括号，
+- .astype(), .asof? 这两个方法练习一下
+* <2016-02-01 Mon 12:16>
+- pandas, DataFrame 如何取得一行和一列的值
+  - 取得一行: DataFrame.T[0], 0 为 index 的值
+  - 取得一列的值: DataFrame['colume_name']
+- 怎么由按行得到的数据，转变成按列分组的数据，这两种形式间的互换
+  - 例：原始数据为一条条的: {‘city_name': 南京，300 以下: 7203, 300-700:,...}
+  - 目标格式：
+    #     'city_name':["南京市", "南通市", "宿迁市", "常州市", "徐州市", "扬州市"],
+    #     'data':[{'price': "300 以下",'value': ["7203", "5023","1582", "5691", "13631", "2726"]},
+    #             {'price': "300-700",'value': ["7203", "5023","1582", "5691", "13631", "2726"]},
+    #             {'price': "700-1200",'value': ["7203", "5023","1582", "5691", "13631", "2726"]},
+    #             {'price': "1200-3000",'value': ["7203", "5023","1582", "5691", "13631", "2726"]},
+    #             {'price': "3000 以上",'value': ["7203", "5023","1582", "5691", "13631", "2726"]}
+- Python 中，字典的创建，字典的初始化，字典的合并，字典的相关操作

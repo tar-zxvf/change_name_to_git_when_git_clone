@@ -1,0 +1,113 @@
+* TODO note operations of spacemacs in this buffer
+* <2016-02-09 二 23:27>
+* make sure the most needed function of emacs: ORG-mode & magit & swiper
+** look the video and compact manual to make sure the *ORG* daily-work-flow
+- [ ] look guide for
+- [ ] agenda, schedule syntax
+- [ ] capture
+- [ ] GTD graph
+** read the complete manual and video to make it clear
+** practice it daily many times to be familiar
+* DONE note the setting of zsh
+CLOSED: [2016-02-09 二 22:38]
+- State "DONE"       from "TODO"       [2016-02-09 二 22:38]
+** usual settings in ~/.zshrc
+remember usual settings: total about 11 lines
+
+# my need from csdn
+# settings about history {{{
+export HISTSIZE=10000
+export HISTFILE=~/.zhistory
+# write into history file with append way
+setopt INC_APPEND_HISTORY
+# only keep one commcand if continued to type one cmd many times
+setopt HIST_IGNORE_DUPS
+# add timestamp for history cmd
+setopt EXTENDED_HISTORY
+
+# auto save cd - history, cd -[TAB]
+setopt AUTO_PUSHD
+setopt PUSHD_IGNORE_DUPS
+
+# do not add the cmd to history if typed space in front of it
+setopt HIST_IGNORE_SPACE
+# }}}
+
+# auto complete
+setopt AUTO_LIST
+setopt AUTO_MENU
+
+setting 80 chars' width and 40 lines' function,
+就是为了一眼能看完屏幕的内容
+
+* <2016-02-13 六 22:17>
+** TODO spacemacs' work-flow
+- State "TODO"       from "DONE"       [2016-02-13 六 23:54]
+- State "DONE"       from "STARTED"    [2016-02-13 六 22:59]
+:LOGBOOK:
+CLOCK: [2016-02-13 六 22:53]--[2016-02-13 六 22:59] =>  0:06
+CLOCK: [2016-02-13 六 22:19]--[2016-02-13 六 22:44] =>  0:25
+:END:
+- spc b h->spacemacs' home buffer, o->ace jump
+- layout: the usual worked buffers
+- org-Agenda
+- capture template
+** TODO org flow
+- State "TODO"       from "DONE"       [2016-02-13 六 23:54]
+- State "DONE"       from "STARTED"    [2016-02-13 六 23:49]
+:LOGBOOK:
+CLOCK: [2016-02-13 六 23:08]--[2016-02-13 六 23:33] =>  0:25
+:END:
+- org-Agenda View
+- pomodoro: , p  spc t m c, mode-line
+*** org work-flow
+- add org files to agenda-view
+- the files with todo tags to be done
+- capture: familiar with templates
+- core: agenda-view
+*** TODO [#A] org-agenda
+- State "TODO"       from "DONE"       [2016-02-13 六 23:53]
+**** what should be in agenda-view
+1. important and emergency things should be in A priority
+2. a few habit to update you to date, good habit make good person
+**** schedule syntax
+<.+1d>
+**** priority & tags &
+**** with pomodoro technicals
+need only one gtd.org file, and manay files in org agenda files
+**** operations:
+1.
+*** capture
+- spc C c: open capture templates
+- [l]: links: with tag links in notes.org
+- [t]: simpley todo in gtd.org
+- [w]: work: in gtd.org
+*** pdf, photo path
+*** spc t S, spc S c ,  spelling check and correct advice
+** SOMEDAY familiar to spacemacs
+- [ ] familiar the helm-bindkey
+- how cool are default-bindkey
+** tomorrow:
+SCHEDULED: <2016-02-14 一 22:00>
+- magit: learn how to use git in emacs and test it
+- spacemacs rocks: how to search configuration files, of course lisp
+- agenda: read compact and complete pdf to practice it
+  - how to configure path of gtd.org, notes.org
+
+#  LocalWords:  zsh
+* <2016-02-16 二 20:01>
+1. git: learn git's basic operations:
+   - git init -> git add remote
+   - git markdown in cmd worked
+   - git clone
+   - the git's workflow
+   - note it in keep-progress/learn-git/learn-git.org
+2. after git -> emacs' configuration: contains org's capture workflow
+   - first: own branch of zilongshanren,
+   - second: change it due to me, and use git to record
+     - org-catpure
+     - input-wubi?
+   - third: create own layer
+   - note it in keep-progress/learn-emacs/learn-emacs.org
+3. linus usually used command
+   - note it in keep-progress/learn-linux/learn-linux.org
