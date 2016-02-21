@@ -111,3 +111,11 @@ SCHEDULED: <2016-02-14 一 22:00>
    - note it in keep-progress/learn-emacs/learn-emacs.org
 3. linus usually used command
    - note it in keep-progress/learn-linux/learn-linux.org
+*  <2016-02-21 日 00:30>
+** [#A] make mechanism of org's layout
+- must note the thought of this layout
+- summary thinking
+** make sure the things to be of avrious scene
+- like work, free, rest, etc.
+** learn spacemacs' video about search and layout
+** make environment of work

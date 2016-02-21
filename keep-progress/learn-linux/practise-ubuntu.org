@@ -1,0 +1,19 @@
+* mainly note some tips about ubuntu
+about one operation system:
+- the way to install softwares
+- shortcuts of the system
+- usually used softwares
+** worksapces: virtual mutiple desktops
+*** about settings:
+- system settings -> appearance -> enable worksapces
+- system settings -> keyboard -> shortcuts
+** software installation:
+- apt-get install formula
+*** software needed
+- emacs
+- zilongshanren's spacemacs
+- my-spacemacs (to be)
+- tmux
+- zsh
+- oh-my-zsh
+- firefox & chrome
