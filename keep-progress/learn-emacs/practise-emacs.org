@@ -1,0 +1,15 @@
+* about emacs
+** spacemacs
+***  key-binding practised
+****  可以看 spacemacs 的 helm 提示，先弄明白常用的快捷键
+- spc w c
+- spc w d
+- spc w v
+- spc w H/L/J/K
+- spc b b
+- spc tab
+- C-x C-c
+- C-c C-c
+- C-x C-f
+***  install in mac, how to open gui emacs with cmd line
+***  daily used frequently tool-layer

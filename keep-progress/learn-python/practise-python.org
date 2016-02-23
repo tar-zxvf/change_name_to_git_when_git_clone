@@ -1,0 +1,9 @@
+* 把当前时间转换成 h:m:s 的形式显示
+>>> import datetime
+>>> str(datetime.timedelta(seconds=666))
+'0:11:06'
+* Django
+**  By default, Django gives each model the following field, except specify primary_key manually
+- id = models.AutoField(primary_key=True)
+- id = models.IntegerField(primary_key=True,default=0),
+-

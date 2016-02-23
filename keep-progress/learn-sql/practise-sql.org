@@ -1,0 +1,3 @@
+* 把一个数据库中的某张表，导入到另一个数据库中：
+insert into target.table_name select * from source.table_name
+*
