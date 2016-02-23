@@ -1,0 +1,6 @@
+* 在每一行的前面插入行号：
+%s/^/\=line(".")/
+**  说明：
+- %s: 为全局查找替换
+- %s/search_pattern/replace_content/
+- line 为 vim 的内置函数
