@@ -6,4 +6,21 @@
 **  By default, Django gives each model the following field, except specify primary_key manually
 - id = models.AutoField(primary_key=True)
 - id = models.IntegerField(primary_key=True,default=0),
--
+* virtualenv
+** install
+- pip install virtualenv
+- about pip:
+  - pip install django==1.8.2, install specified version of some package
+  - install pip: in ubuntu: sudo apt-get install python-pip
+** create virtual environment
+- vitrualenv project-name
+  - will automatically install pip,etc in virtualenv
+** active/deactive environment
+- cd project-name
+- souce bin/activate
+- deactivate
+** [#A] most important
+- essentially: python-interpreter-path/python *.py
+- pip is same
+- so activate/deactivate is rarely used
+*
