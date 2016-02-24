@@ -37,3 +37,9 @@ j- git status
 - choose hunks to stage
 *  pro git -  book
 http://git-scm.com/book/zh/v2
+*  只 git pull 某些文件
+git pull 的原理是 git fetch + git merge
+所以要做的就是
+- git fetch: 把最新分支数据拉到本地
+- git checkout branch_name -- path_to_file_name : 从最新分支数据,把文件内容检出，注意"--",
+* TODO 命令中"--"到底是怎么回事?
