@@ -1,3 +1,8 @@
+* first operations after have one linux operating system
+- install zsh
+- config zsh
+- install oh-my-zsh
+- open the magic theme
 * ssh cmd
 ** 问题现象
 用 ssh 命令连接服务器之后，如果一段时间不操作，再次进入 Terminal 时会有一段时间没有响应，然后就出现错误提示：
@@ -10,3 +15,11 @@ ServerAliveInterval 60
 ClientAliveInterval 60
 - 方法三：如果您只想让当前的 ssh 保持连接，可以使用以下的命令：
 $ ssh -o ServerAliveInterval=60 user@sshserver
+* iterm2 and tmux
+http://kinslover.info/iterm2tmux/
+http://blog.chinaunix.net/uid-26495963-id-3140087.html
+http://blog.jobbole.com/87584/
+* localhost, 127.0.0.1, 0.0.0.0 区别
+localhost 只是 127.0.0.1 的地址
+127.0.0.1 代表本地地址，速度快，不走协议栈
+0.0.0.0 代表本地绑定的所有地址

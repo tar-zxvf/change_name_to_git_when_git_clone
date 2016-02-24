@@ -1,3 +1,16 @@
 * 把一个数据库中的某张表，导入到另一个数据库中：
 insert into target.table_name select * from source.table_name
-*
+*  mysqldump
+https://blog.marceloaltmann.com/backup-compactadoem-mysql-mysqldump-gzip-bzip2/
+*  mysql 相关配置
+*  sequel Pro
+- 保存存储过程：
+  按照存储过程的语法，在 sql query 里写好
+  直接 run 即可，
+*  自增长 id
+alter table_name auto_increasement = 1; 从 1 开始自增长
+truncate table_name; 会把自增长 id 重置为 0
+Django models 里无 truncate 操作
+Django models.objects.delete()会自动把外键关系的表也删除掉
+* alter sql??
+* update sql??

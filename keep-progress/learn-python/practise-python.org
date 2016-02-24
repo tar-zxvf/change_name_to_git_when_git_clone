@@ -24,3 +24,20 @@
 - pip is same
 - so activate/deactivate is rarely used
 *
+* 对 excel 文件的处理
+**  xlwt:
+- a = xlwt.Wook(),: 参数可按__init__()来传递
+- sheet = a.add_sheet(sheet_name, cell_overwrite_ok=True)
+- sheet.write(r, c, value, sytle)
+- sheet.write_merge(start_r, end_r, start_c, end_c, value, sytle)
+- relative code：再说
+*  语法问题:
+**  print >> f, str
+- print 是将之后的内容输出到终端显示；
+- print >>是将内容输出定向到某文件；
+  例如：
+  fpa=open("test.txt","w")
+  testStr="Hello World!"
+  print >> fpa, testStr
+  fpa.close()
+  就是将 testStr 字符串写到 text.txt 文件中。

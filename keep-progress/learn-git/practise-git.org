@@ -1,0 +1,39 @@
+*  用另一个分支或提交版本的某一个文件，代替当前文件
+**  用分支 aim-branch 上的 file_name 文件，代替 now-branch 中的同名文件
+  git checkout now-branch
+  git checkout aim-branch -- file_name
+** git checkout ulr:
+http://www.cnblogs.com/hutaoer/archive/2013/05/07/git_checkout.html
+*  设置大小写不敏感
+http://blog.hexu.org/archives/1909.shtml
+*  sourcetree,license
+https://my.atlassian.com/products/index?sen=6696887#license_6696887
+*  只 git stage 文件里的某一行或者某一些修改的地方
+- git add --patch(-p for short) file_name
+- will display:
+Stage this hunk [y,n,q,a,d,/,j,J,g,s,e,?]?
+
+And here the meaning of each option:
+
+y stage this hunk for the next commit
+n do not stage this hunk for the next commit
+q quit; do not stage this hunk or any of the remaining ones
+a stage this hunk and all later hunks in the file
+d do not stage this hunk or any of the later hunks in the file
+g select a hunk to go to
+/ search for a hunk matching the given regex
+j leave this hunk undecided, see next undecided hunk
+J leave this hunk undecided, see next hunk
+k leave this hunk undecided, see previous undecided hunk
+K leave this hunk undecided, see previous hunk
+s split the current hunk into smaller hunks
+e manually edit the current hunk
+? print help
+- choose to stage which hunk
+- workflow
+j- git status
+- git add -p file_name
+- g
+- choose hunks to stage
+*  pro git -  book
+http://git-scm.com/book/zh/v2
