@@ -2,10 +2,19 @@
 >>> import datetime
 >>> str(datetime.timedelta(seconds=666))
 '0:11:06'
+**  计算月年的方法
+form dateutil.relativedelta import *
+
+datetime.today().date - relativedelta(months=6)
 * Django
 **  By default, Django gives each model the following field, except specify primary_key manually
 - id = models.AutoField(primary_key=True)
 - id = models.IntegerField(primary_key=True,default=0),
+**  在一个项目里有多个 app，Django 的 app 相关操作？
+**  Django 里聚合函数，默认为 0 的写法
+from django.db.models.functions import Coalesce
+
+score = self.picturevote_set.aggregate(Coalesce(models.Sum('value'), 0))
 * virtualenv
 ** install
 - pip install virtualenv
@@ -41,3 +50,12 @@
   print >> fpa, testStr
   fpa.close()
   就是将 testStr 字符串写到 text.txt 文件中。
+**  range & xrange
+- range 是先返回一个 list，再运行 for ..
+- xrange 是返回一个生成器，用的时候再取值
+***  用法：
+一般用 xrange，除非就想得到一个 list 的时候用 range
+* datetime.datetime.now() & datetime.datetime.today()
+- .now()可以接收一个参数：tz=TimeZone,即时区
+- 不带参数时，.now()和.today()一致
+** 像这种问题，一般用到时读文档就好,

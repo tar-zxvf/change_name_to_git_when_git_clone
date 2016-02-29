@@ -1,0 +1,36 @@
+* 缩进
+# Aligned with opening delimiter
+foo = long_function_name(var_one, var_two,
+                         var_three, var_four)
+       # Aligned with opening delimiter in a dictionary
+foo = {
+    long_dictionary_key: value1 +
+                         value2,
+... }
+       # 4-space hanging indent; nothing on first line
+foo = long_function_name(
+    var_one, var_two, var_three, var_four)
+       # 4-space hanging indent in a dictionary
+foo = {
+    long_dictionary_key:
+        long_dictionary_value,
+     ...
+}
+*  空格
+**  二元运算符两边都要加空格，指示关键字参数时不加
+**  数学运算符两边，需要自己判断，但希望保持一致
+* shebang(hashbang) 即:  '#!'
+在模块导入时会被忽略，故只有在直接运行的文件中加入才有意义
+* doc string(Python)
+PEP 257,
+"""..."""
+* ",',""",的使用
+同一个文件中，使用”或’表示字符串应统一，除了字符串中包含字符串
+“”“，使用同上，多行字符串一般用"""，除了在字符串中包含"
+字符串通常应使用隐匿行连接，即分多个字符串，都有",括起来
+* TODO 注释
+- 目的：为临时代码写 TODO 注释
+- 若时将来做某事，一定要包含一个日期，或者一个事件之后
+# example
+# TODO(kl@gmail.com): Use a "*" here for string repetition.
+# TODO(Zeke) Change this to use relations.
