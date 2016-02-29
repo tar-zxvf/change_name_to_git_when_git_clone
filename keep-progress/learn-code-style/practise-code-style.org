@@ -34,3 +34,5 @@ PEP 257,
 # example
 # TODO(kl@gmail.com): Use a "*" here for string repetition.
 # TODO(Zeke) Change this to use relations.
+*  Google 编程语言规范地址
+http://zh-google-styleguide.readthedocs.org/en/latest/contents/
