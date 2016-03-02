@@ -24,6 +24,8 @@ localhost 只是 127.0.0.1 的地址
 127.0.0.1 代表本地地址，速度快，不走协议栈
 0.0.0.0 代表本地绑定的所有地址
 * scp
+# 讲解网页
+http://www.cnblogs.com/hitwtx/archive/2011/11/16/2251254.html
 scp source_file user@host:path_to_file
 命令格式：
                 scp local_file remote_username@remote_ip:remote_folder
@@ -41,3 +43,18 @@ scp source_file user@host:path_to_file
                 scp /home/space/music/1.mp3 root@www.cumt.edu.cn:/home/root/others/music/001.mp3
                 scp /home/space/music/1.mp3 www.cumt.edu.cn:/home/root/others/music
                 scp /home/space/music/1.mp3 www.cumt.edu.cn:/home/root/others/music/001.mp3
+* rsync
+关于 rsync, scp, cp 拷贝速度
+我做了一个简单的测试，拷贝一个 240M 的文件，仅供参考
+#cp full20100526.tar.gz full20100526.tar.gz.bak
+速度很快
+#rsync -av --progress full20100526.tar.gz full20100526.tar.gz.bak
+速度比较快（113.10MB/s）
+*  linux 两种启动界面的方式：inittab, systemd
+** inittab:
+编辑 /etc/inittab
+** systemd
+systemctl get-default    :查看默认 target
+systemctl set-default TARGET.target
+- two main targets:  multi-user.target,  graphical.target,
+- path: /usr/lib/systemd/system/....target
