@@ -2,6 +2,7 @@
 insert into target.table_name select * from source.table_name
 *  mysqldump
 https://blog.marceloaltmann.com/backup-compactadoem-mysql-mysqldump-gzip-bzip2/
+mysql -u user -p [database.tables] | bzip2 > file.sql.bz2
 *  mysql 相关配置
 *  sequel Pro
 - 保存存储过程：
@@ -14,3 +15,6 @@ Django models 里无 truncate 操作
 Django models.objects.delete()会自动把外键关系的表也删除掉
 * alter sql??
 * update sql??
+*  delete from db.table where ...
+*  insert into db.tables sql.
+*  drop database 会触发提示，说此数据库在用，所以只删除里面的表就好

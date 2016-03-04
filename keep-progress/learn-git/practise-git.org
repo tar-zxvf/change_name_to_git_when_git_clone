@@ -5,7 +5,10 @@
 ** git checkout ulr:
 http://www.cnblogs.com/hutaoer/archive/2013/05/07/git_checkout.html
 *  设置大小写不敏感
-http://blog.hexu.org/archives/1909.shtml
+git config core.ignorecase false
+** [#A] 但是因为一般是共用一个仓库，所以一般不要依赖于本地的 git config 设置
+git mv -f origin_file ORIGIN_FILE
+然后 git commit 即可
 *  sourcetree,license
 https://my.atlassian.com/products/index?sen=6696887#license_6696887
 *  只 git stage 文件里的某一行或者某一些修改的地方
@@ -43,3 +46,5 @@ git pull 的原理是 git fetch + git merge
 - git fetch: 把最新分支数据拉到本地
 - git checkout branch_name -- path_to_file_name : 从最新分支数据,把文件内容检出，注意"--",
 * TODO 命令中"--"到底是怎么回事?
+* TODO [#A] git checkout
+- git checkout <commit> <file>

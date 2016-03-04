@@ -15,6 +15,9 @@ datetime.today().date - relativedelta(months=6)
 from django.db.models.functions import Coalesce
 
 score = self.picturevote_set.aggregate(Coalesce(models.Sum('value'), 0))
+**  .values().annotate(sum()).order_by(..)
+三个加起来才想当于：sql 中的 group_by
+- 得充分理解 group_by
 * virtualenv
 ** install
 - pip install virtualenv
